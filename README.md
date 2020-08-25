@@ -13,9 +13,8 @@
   ## Usage
   The intended use of this application is to simply streamline the process of generating a README.
 
-  <figure class="video_container">
-  <iframe src="https://www.youtube.com/embed/qFTkf2MHCl8" frameborder="0" allowfullscreen="true"> </iframe>
-  </figure> 
+  [![Link to video](https://user-images.githubusercontent.com/63169637/91225897-24ec9e80-e6d9-11ea-8a45-b004390480f6.png)](https://youtu.be/qFTkf2MHCl8)
+   
 
   ## License
   ![License Badge](https://img.shields.io/badge/license-IBM-blue)
