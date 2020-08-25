@@ -9,17 +9,22 @@
   * [Tests](#tests)
   * [Questions](#questions)
   ## Installation
-  To install this application fork and clone this repository, then use `nmp i` to install the dependencies.
+  Use `npm i` to install the dependencies.
   ## Usage
   The intended use of this application is to simply streamline the process of generating a README.
+
+  <figure class="video_container">
+  <iframe src="https://youtu.be/qFTkf2MHCl8" frameborder="0" allowfullscreen="true"> </iframe>
+  </figure> 
+
   ## License
-  ![License Badge](https://img.shields.io/badge/license-blue) This application is protected by MIT licensing.
-  For more information on available licenses, visit [https://choosealicense.com/](https://choosealicense.com/).
+  ![License Badge](https://img.shields.io/badge/license-IBM-blue)
+  This project is covered by the IBM. For more information on available licenses, visit [https://choosealicense.com/](https://choosealicense.com/).
   ## Contributing
   No current contributors.
   https://github.com/firstcontributions/first-contributions
   ## Tests
-  No tests are currently available.
+  No tests currently available.
   ## Questions?
   https://github.com/rschumaker6455
   
