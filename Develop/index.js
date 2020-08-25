@@ -1,76 +1,78 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
+const generateMarkdown = require("./utils/generateMarkdown");
 // array of questions for user
+
+const validateAnswer = async (input) => {
+    if (!input) {
+        return "Response required.";
+    }
+    return true;
+};
 
 inquirer.prompt([
     {
     type: "input",
+    message: "What is your Github profile name?",
+    name: "name",
+    validate: validateAnswer
+    },
+    {
+    type: "input",
+    message: "What is your email address?",
+    name: "email",
+    validate: validateAnswer
+    },
+    {
+    type: "input",
     message: "What is the title of your application?",
-    name: "Title"
+    name: "title",
+    validate: validateAnswer
     }, 
     {
     type:"input",
     message: "What is the description of your application?",
-    name: "Description"
+    name: "description",
+    validate: validateAnswer
     }, 
-    {
-    type:"input",
-    message: "Include Table of Contents Here.",
-    name: "Table of Contents"
-    }, 
-    {
+    { 
     type:"input",
     message: "Are any installations needed to run your application?",
-    name: "Installation"
+    name: "installation",
+    validate: validateAnswer
     },
     {
     type:"input",
     message: "What is your applications intended usage?",
-    name: "Usage"  
+    name: "usage",
+    validate: validateAnswer  
     },
     {
     type:"input",
     message: "Do have a license for this application?",
-    name: "License"   
+    name: "license",
+    validate: validateAnswer  
     }, 
     {
     type:"input",
     message: "Who contributed to this application?",
-    name: "Contributors"   
+    name: "contributors",
+    validate: validateAnswer  
     },
     {
     type:"input",
     message: "What tests did you use for this application?",
-    name: "Tests" 
+    name: "tests",
+    validate: validateAnswer
     }
 ])
 //user feedback//
-.then(answers => { 
-    fs.writeFile("README.md", 
-    `name.Title  
-    answers.Description 
-    answers.Table of Contents
-    answers.Installation
-    answers.Usage
-    answers.License
-    answers.Contributors
-    answers.Tests`,
-    function(err) {
-        if (err) return console.log(err);
+.then(data => {
+
+    fs.writeFile("README.md", generateMarkdown(data), function (err) {
+      if (err) {
+        console.log(err);
+      }
     })
-})
-.catch(error => {
-    if(error.isTtyError) {
-    console.log("Prompt couldn't be rendered in the current environment.")
-    } else {
-       console.log("Something went wrong.")
-    }  
-});
-
-// function to initialize program
-function init() {
-
-}
-
-// function call to initialize program
-init();
+  
+  });
