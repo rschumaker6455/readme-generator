@@ -48,10 +48,20 @@ inquirer.prompt([
     validate: validateAnswer  
     },
     {
-    type:"input",
-    message: "Do have a license for this application?",
-    name: "license",
-    validate: validateAnswer  
+      type: "list",
+      message: "Which license protects this project?",
+      name: "license",
+      choices: [
+        "Apache",
+        "Boost",
+        "Eclipse",
+        "GNU",
+        "IBM",
+        "MIT",
+        "Mozilla",
+        "Unlicensed"
+      ],
+      validate: validateAnswer
     }, 
     {
     type:"input",
