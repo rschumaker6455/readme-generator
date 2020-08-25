@@ -14,7 +14,7 @@
   The intended use of this application is to simply streamline the process of generating a README.
 
   <figure class="video_container">
-  <iframe src="https://youtu.be/qFTkf2MHCl8" frameborder="0" allowfullscreen="true"> </iframe>
+  <iframe src="https://www.youtube.com/embed/qFTkf2MHCl8" frameborder="0" allowfullscreen="true"> </iframe>
   </figure> 
 
   ## License
