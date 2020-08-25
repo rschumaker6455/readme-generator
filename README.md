@@ -14,6 +14,8 @@
   The intended use of this application is to simply streamline the process of generating a README.
 
   [![Link to video](https://user-images.githubusercontent.com/63169637/91225897-24ec9e80-e6d9-11ea-8a45-b004390480f6.png)](https://youtu.be/qFTkf2MHCl8)
+  
+  Follow link in image above to see an example of the application.
    
 
   ## License
