@@ -13,10 +13,7 @@
   ## Usage
   The intended use of this application is to simply streamline the process of generating a README.
 
-  <figure class="video_container">
-  <iframe src="https://drive.google.com/file/d/1RXC8dPtssA6MxyRG3qVQ0VBY_wu1cQwr/preview" width="640" height="480" frameborder="0" allowfullscreen="true"> </iframe>
-  </figure>
-   
+  ![Alt Text](README-generator.gif)
 
   ## License
   ![License Badge](https://img.shields.io/badge/license-IBM-blue)
